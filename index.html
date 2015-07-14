@@ -1,0 +1,14 @@
+<html>
+<head>
+  <title>Electron demo</title>
+</head>
+<body>
+  <script>
+    var levelup = require('levelup');
+    var leveldown = require('leveldown');
+
+    var db = levelup(__dirname + '/db', { db: leveldown });
+    window.db = db;
+  </script>
+</body>
+</html>
