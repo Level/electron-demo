@@ -2,14 +2,14 @@
   "name": "electron-demo",
   "private": true,
   "dependencies": {
-    "leveldown": "maxogden/leveldown#newnan",
+    "leveldown": "^1.4.1",
     "levelup": "^1.2.1"
   },
   "scripts": {
-    "rebuild-leveldb": "cd node_modules/leveldown && set HOME=~/.electron-gyp && node-gyp rebuild --target=0.25.1 --arch=x64 --dist-url=https://atom.io/download/atom-shell",
+    "rebuild-leveldb": "cd node_modules/leveldown && HOME=~/.electron-gyp node-gyp rebuild --target=0.29.1 --arch=x64 --dist-url=https://atom.io/download/atom-shell",
     "start": "electron ."
   },
   "devDependencies": {
-    "electron-prebuilt": "^0.25.1"
+    "electron-prebuilt": "0.29.1"
   }
 }
