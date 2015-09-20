@@ -6,10 +6,8 @@
 ## Get started
 
 ```bash
-$ nvm install iojs
 $ npm install
-$ npm run rebuild-leveldb
 $ npm start
 ```
 
-  Then check `window.db` for your ready to use leveldb.
+  Then check `window.db` and you're ready to use leveldb.
