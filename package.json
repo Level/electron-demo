@@ -7,9 +7,11 @@
   },
   "scripts": {
     "postinstall": "cd node_modules/leveldown && HOME=~/.electron-gyp node-gyp rebuild --target=0.36.10 --arch=x64 --dist-url=https://atom.io/download/atom-shell",
-    "start": "electron ."
+    "start": "electron .",
+    "test": "standard"
   },
   "devDependencies": {
-    "electron-prebuilt": "0.37.6"
+    "electron-prebuilt": "0.37.6",
+    "standard": "^10.0.3"
   }
 }
