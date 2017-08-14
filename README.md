@@ -3,6 +3,8 @@
 
 <img alt="LevelDB Logo" height="100" src="http://leveldb.org/img/logo.svg">
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Level/electron-demo.svg)](https://greenkeeper.io/)
+
   Demo app loading a leveldb into an electron context.
 
 ## Get started
