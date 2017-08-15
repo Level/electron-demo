@@ -2,16 +2,16 @@
   "name": "electron-demo",
   "private": true,
   "dependencies": {
+    "electron": "1.7.5",
     "leveldown": "^1.4.1",
     "levelup": "^1.2.1"
   },
   "scripts": {
-    "postinstall": "cd node_modules/leveldown && HOME=~/.electron-gyp node-gyp rebuild --target=0.36.10 --arch=x64 --dist-url=https://atom.io/download/atom-shell",
+    "postinstall": "cd node_modules/leveldown && HOME=~/.electron-gyp node-gyp rebuild --target=1.7.5 --arch=x64 --dist-url=https://atom.io/download/atom-shell",
     "start": "electron .",
     "test": "standard"
   },
   "devDependencies": {
-    "electron-prebuilt": "1.4.13",
     "standard": "^10.0.3"
   }
 }
