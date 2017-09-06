@@ -2,7 +2,7 @@
   "name": "electron-demo",
   "private": true,
   "dependencies": {
-    "electron": "1.7.5",
+    "electron": "1.7.6",
     "leveldown": "^1.4.1",
     "levelup": "^1.2.1"
   },
