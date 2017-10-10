@@ -4,7 +4,7 @@
   "dependencies": {
     "electron": "1.7.5",
     "leveldown": "^1.4.1",
-    "levelup": "^1.2.1"
+    "levelup": "^2.0.0"
   },
   "scripts": {
     "postinstall": "cd node_modules/leveldown && HOME=~/.electron-gyp node-gyp rebuild --target=1.7.5 --arch=x64 --dist-url=https://atom.io/download/atom-shell",
