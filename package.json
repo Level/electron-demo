@@ -3,10 +3,11 @@
   "private": true,
   "dependencies": {
     "electron": "1.7.5",
+    "electron-rebuild": "~1.6.0",
     "level": "^2.0.1"
   },
   "scripts": {
-    "postinstall": "cd node_modules/leveldown && npm run install --target=1.7.5 --runtime=electron",
+    "postinstall": "electron-rebuild -w leveldown",
     "start": "electron .",
     "test": "standard"
   },
