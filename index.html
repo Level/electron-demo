@@ -4,11 +4,9 @@
 </head>
 <body>
   <script>
-    var levelup = require('levelup');
-    var leveldown = require('leveldown');
-
-    var db = levelup(__dirname + '/db', { db: leveldown });
-    window.db = db;
+    var level = require('level')
+    var db = level(__dirname + '/db')
+    window.db = db
   </script>
 </body>
 </html>
