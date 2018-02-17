@@ -4,7 +4,7 @@
   "dependencies": {
     "electron": "~1.8.2",
     "electron-rebuild": "~1.7.0",
-    "level": "^2.0.1"
+    "level": "^3.0.0"
   },
   "scripts": {
     "postinstall": "electron-rebuild -w leveldown",
