@@ -9,9 +9,21 @@
   "scripts": {
     "postinstall": "electron-rebuild -w leveldown",
     "start": "electron .",
-    "test": "standard"
+    "test": "standard",
+    "remark": "remark README.md CONTRIBUTORS.md -o"
+  },
+  "remarkConfig": {
+    "plugins": [
+      [
+        "remark-git-contributors",
+        "level-community"
+      ]
+    ]
   },
   "devDependencies": {
+    "level-community": "^3.0.0",
+    "remark-cli": "^5.0.0",
+    "remark-git-contributors": "^0.2.1",
     "standard": "^11.0.0"
   }
 }
