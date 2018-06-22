@@ -4,6 +4,7 @@
 
 [![level badge][level-badge]](https://github.com/level/awesome)
 [![Build Status](https://img.shields.io/travis/Level/electron-demo.svg?branch=master)](http://travis-ci.org/Level/electron-demo)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Get started
 
