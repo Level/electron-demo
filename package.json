@@ -2,7 +2,7 @@
   "name": "electron-demo",
   "private": true,
   "dependencies": {
-    "electron": "~2.0.0",
+    "electron": "~3.0.13",
     "electron-rebuild": "~1.8.1",
     "level": "^4.0.0"
   },
