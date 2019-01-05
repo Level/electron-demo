@@ -13,6 +13,7 @@
     "level": "^4.0.0"
   },
   "devDependencies": {
+    "hallmark": "^0.1.0",
     "level-community": "^3.0.0",
     "remark-cli": "^5.0.0",
     "remark-git-contributors": "^0.2.1",
