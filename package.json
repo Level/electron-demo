@@ -4,7 +4,8 @@
   "scripts": {
     "postinstall": "electron-rebuild -w leveldown",
     "start": "electron .",
-    "test": "standard"
+    "test": "standard && hallmark",
+    "hallmark": "hallmark --fix"
   },
   "dependencies": {
     "electron": "~3.0.13",
