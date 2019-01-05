@@ -1,16 +1,22 @@
 {
   "name": "electron-demo",
   "private": true,
-  "dependencies": {
-    "electron": "~3.0.13",
-    "electron-rebuild": "~1.8.1",
-    "level": "^4.0.0"
-  },
   "scripts": {
     "postinstall": "electron-rebuild -w leveldown",
     "start": "electron .",
     "test": "standard",
     "remark": "remark README.md CONTRIBUTORS.md -o"
+  },
+  "dependencies": {
+    "electron": "~3.0.13",
+    "electron-rebuild": "~1.8.1",
+    "level": "^4.0.0"
+  },
+  "devDependencies": {
+    "level-community": "^3.0.0",
+    "remark-cli": "^5.0.0",
+    "remark-git-contributors": "^0.2.1",
+    "standard": "^12.0.0"
   },
   "remarkConfig": {
     "plugins": [
@@ -19,11 +25,5 @@
         "level-community"
       ]
     ]
-  },
-  "devDependencies": {
-    "level-community": "^3.0.0",
-    "remark-cli": "^5.0.0",
-    "remark-git-contributors": "^0.2.1",
-    "standard": "^12.0.0"
   }
 }
