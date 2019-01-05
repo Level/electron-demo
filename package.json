@@ -4,8 +4,7 @@
   "scripts": {
     "postinstall": "electron-rebuild -w leveldown",
     "start": "electron .",
-    "test": "standard",
-    "remark": "remark README.md CONTRIBUTORS.md -o"
+    "test": "standard"
   },
   "dependencies": {
     "electron": "~3.0.13",
@@ -15,17 +14,7 @@
   "devDependencies": {
     "hallmark": "^0.1.0",
     "level-community": "^3.0.0",
-    "remark-cli": "^5.0.0",
-    "remark-git-contributors": "^0.2.1",
     "standard": "^12.0.0"
-  },
-  "remarkConfig": {
-    "plugins": [
-      [
-        "remark-git-contributors",
-        "level-community"
-      ]
-    ]
   },
   "repository": "Level/electron-demo",
   "homepage": "https://github.com/Level/electron-demo",
