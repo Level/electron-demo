@@ -25,5 +25,7 @@
         "level-community"
       ]
     ]
-  }
+  },
+  "repository": "Level/electron-demo",
+  "homepage": "https://github.com/Level/electron-demo"
 }
