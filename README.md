@@ -17,6 +17,6 @@ Then check `window.db` and you're ready to use leveldb.
 
 ## License
 
-[MIT](./LICENSE.md) © 2015-present `electron-demo` [Contributors](./CONTRIBUTORS.md).
+[MIT](LICENSE.md) © 2015-present [Contributors](CONTRIBUTORS.md).
 
 [level-badge]: http://leveldb.org/img/badge.svg
