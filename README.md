@@ -2,8 +2,8 @@
 
 > Demo app loading a leveldb into an electron context.
 
-[![level badge][level-badge]](https://github.com/level/awesome)
-[![Build Status](https://img.shields.io/travis/Level/electron-demo.svg?branch=master)](http://travis-ci.org/Level/electron-demo)
+[![level badge][level-badge]](https://github.com/Level/awesome)
+[![Travis](https://img.shields.io/travis/Level/electron-demo.svg?logo=travis&label=)](https://travis-ci.org/Level/electron-demo)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Backers on Open Collective](https://opencollective.com/level/backers/badge.svg?color=orange)](#backers)
 [![Sponsors on Open Collective](https://opencollective.com/level/sponsors/badge.svg?color=orange)](#sponsors)
