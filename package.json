@@ -4,8 +4,9 @@
   "scripts": {
     "postinstall": "electron-rebuild -w leveldown",
     "start": "electron .",
-    "test": "standard && hallmark",
-    "hallmark": "hallmark --fix"
+    "test": "standard && npm run dependency-check && hallmark",
+    "hallmark": "hallmark --fix",
+    "dependency-check": "dependency-check ."
   },
   "dependencies": {
     "electron": "~3.0.13",
@@ -13,6 +14,7 @@
     "level": "^4.0.0"
   },
   "devDependencies": {
+    "dependency-check": "^3.3.0",
     "hallmark": "^0.1.0",
     "level-community": "^3.0.0",
     "standard": "^12.0.0"
