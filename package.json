@@ -2,16 +2,14 @@
   "name": "electron-demo",
   "private": true,
   "scripts": {
-    "postinstall": "electron-rebuild -w leveldown",
     "start": "electron .",
     "test": "standard && npm run dependency-check && hallmark",
     "hallmark": "hallmark --fix",
     "dependency-check": "dependency-check ."
   },
   "dependencies": {
-    "electron": "~3.0.13",
-    "electron-rebuild": "~1.8.1",
-    "level": "^4.0.0"
+    "electron": "~3.1.8",
+    "level": "~5.0.1"
   },
   "devDependencies": {
     "dependency-check": "^3.3.0",
