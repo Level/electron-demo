@@ -1,6 +1,6 @@
 # electron-demo
 
-> Demo app loading a leveldb into an electron context.
+> Demo app loading LevelDB into an Electron context.
 
 [![level badge][level-badge]](https://github.com/Level/awesome)
 [![Travis](https://img.shields.io/travis/Level/electron-demo.svg?logo=travis&label=)](https://travis-ci.org/Level/electron-demo)
@@ -11,11 +11,13 @@
 ## Get started
 
 ```bash
-$ npm install
-$ npm start
+git clone https://github.com/Level/electron-demo.git
+cd electron-demo
+npm install
+npm start
 ```
 
-Then check `window.db` and you're ready to use leveldb.
+You're now ready to use LevelDB. Try running `await db.put('key', 2)` in the console, followed by `await db.get('key')`!
 
 ## Contributing
 
