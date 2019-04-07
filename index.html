@@ -4,8 +4,9 @@
 </head>
 <body>
   <script>
-    var level = require('level')
-    var db = level(__dirname + '/db')
+    const level = require('level')
+    const db = level('./db')
+
     window.db = db
   </script>
 </body>

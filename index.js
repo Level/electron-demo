@@ -1,20 +1,19 @@
-var electron = require('electron')
-var app = electron.app
-var BrowserWindow = electron.BrowserWindow
-
-var mainWindow = null
+const { app, BrowserWindow } = require('electron')
+const path = require('path')
 
 app.on('window-all-closed', function () {
-  if (process.platform !== 'darwin') {
-    app.quit()
-  }
+  app.quit()
 })
 
 app.on('ready', function () {
-  mainWindow = new BrowserWindow({ width: 800, height: 600 })
-  mainWindow.loadURL('file://' + __dirname + '/index.html') // eslint-disable-line
+  const window = new BrowserWindow({
+    width: 800,
+    height: 600,
+    webPreferences: {
+      nodeIntegration: true
+    }
+  })
 
-  mainWindow.openDevTools()
-
-  mainWindow.on('closed', function () { mainWindow = null })
+  window.loadURL('file://' + path.join(__dirname, 'index.html'))
+  window.openDevTools()
 })
