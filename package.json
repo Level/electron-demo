@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "dependency-check": "^3.3.0",
-    "hallmark": "^0.1.0",
+    "hallmark": "^1.0.0",
     "level-community": "^3.0.0",
     "standard": "^13.0.1"
   },
