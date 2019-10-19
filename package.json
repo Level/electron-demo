@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "electron": "~6.0.0",
-    "level": "~5.0.1"
+    "level": "~6.0.0"
   },
   "devDependencies": {
     "dependency-check": "^3.3.0",
