@@ -3,16 +3,14 @@
   "private": true,
   "scripts": {
     "start": "electron .",
-    "test": "standard && npm run dependency-check && hallmark",
-    "hallmark": "hallmark --fix",
-    "dependency-check": "dependency-check ."
+    "test": "standard && hallmark",
+    "hallmark": "hallmark --fix"
   },
   "dependencies": {
     "electron": "~6.0.0",
     "level": "~6.0.0"
   },
   "devDependencies": {
-    "dependency-check": "^3.3.0",
     "hallmark": "^2.0.0",
     "level-community": "^3.0.0",
     "standard": "^14.0.0"
