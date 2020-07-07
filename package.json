@@ -7,8 +7,8 @@
     "hallmark": "hallmark --fix"
   },
   "dependencies": {
-    "electron": "~9.1.0",
-    "level": "~6.0.0"
+    "electron": "^9.1.0",
+    "level": "^6.0.0"
   },
   "devDependencies": {
     "hallmark": "^2.0.0",
