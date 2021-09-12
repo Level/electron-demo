@@ -4,4 +4,7 @@ updates:
     directory: /
     schedule:
       interval: monthly
-    ignore: []
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
