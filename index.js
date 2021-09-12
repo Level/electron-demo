@@ -10,7 +10,9 @@ app.on('ready', function () {
     width: 800,
     height: 600,
     webPreferences: {
-      nodeIntegration: true
+      // Security-wise this is not recommended
+      nodeIntegration: true,
+      contextIsolation: false
     }
   })
 

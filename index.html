@@ -1,14 +1,8 @@
 <html>
 <head>
   <title>Electron demo</title>
-  <meta http-equiv="Content-Security-Policy" content="script-src 'unsafe-inline'">
 </head>
 <body>
-  <script>
-    const level = require('level')
-    const db = level('./db')
-
-    window.db = db
-  </script>
+  <script src="./renderer.js"></script>
 </body>
 </html>
