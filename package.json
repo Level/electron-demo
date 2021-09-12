@@ -13,7 +13,7 @@
   "devDependencies": {
     "hallmark": "^2.0.0",
     "level-community": "^3.0.0",
-    "standard": "^14.0.0"
+    "standard": "^16.0.3"
   },
   "hallmark": {
     "community": "level-community"
