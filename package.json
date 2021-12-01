@@ -6,7 +6,7 @@
     "test": "standard && hallmark"
   },
   "dependencies": {
-    "electron": "^15.0.0",
+    "electron": "^16.0.3",
     "level": "^7.0.0"
   },
   "devDependencies": {
