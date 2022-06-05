@@ -1,3 +1,3 @@
-const level = require('level')
+const { Level } = require('level')
 
-window.db = level('./db')
+window.db = new Level('./db')
