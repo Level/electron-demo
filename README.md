@@ -1,6 +1,6 @@
 # electron-demo
 
-> Demo app loading LevelDB into an Electron context.
+**Demo app loading LevelDB into an Electron context.**
 
 [![level badge][level-badge]](https://github.com/Level/awesome)
 [![Test](https://img.shields.io/github/workflow/status/Level/electron-demo/Test?label=test)](https://github.com/Level/electron-demo/actions/workflows/test.yml)
@@ -16,7 +16,22 @@ npm install
 npm start
 ```
 
-You're now ready to use LevelDB. Try running `await db.put('key', 2)` in the console, followed by `await db.get('key')`!
+You're now ready to use LevelDB. Try running `await db.put('key', 2)` in the devtools console of the Electron window, followed by `await db.get('key')`!
+
+## Architecture
+
+The main process ([`main.js`](./main.js)) opens a LevelDB database using [`level`](https://github.com/Level/level) and exposes it to renderer processes ([`renderer.js`](./renderer.js)) using [`many-level`](https://github.com/Level/many-level). The processes communicate using [Electron IPC](https://www.electronjs.org/docs/latest/api/ipc-main). This approach is a secure default that allows renderer processes to be [sandboxed](https://www.electronjs.org/docs/latest/tutorial/sandbox). As a consequence, `require()` is not available, so we use `browserify` to bundle the JavaScript into a single file.
+
+Alternatively you can enable the potentially insecure [`nodeIntegration` option](https://www.electronjs.org/docs/latest/api/browser-window#new-browserwindowoptions) and do the following in a renderer process:
+
+```js
+const { Level } = require('level')
+const db = new Level('./db')
+```
+
+But then only one process can open the database at the same time. Another alternative is to use [`browser-level`](https://github.com/Level/browser-level) in renderer processes, if you want each process to have its own database backed by IndexedDB.
+
+As this is a demo, the implementation here (specifically the IPC) is not optimized and does not handle errors. The demo also does not include scripts to package up the Electron app for production (e.g. using `electron-builder`) which will require a few additional steps (e.g. `asarUnpack` in the case of `electron-builder`) due to the use of Node.js native addons.
 
 ## Contributing
 
