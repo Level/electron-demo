@@ -11,7 +11,7 @@
     "electron": "^19.0.1",
     "level": "^8.0.0",
     "many-level": "^1.0.1",
-    "readable-stream": "github:nodejs/readable-stream#81c52641299e5ea3a5e37179967bb13691cad081"
+    "readable-stream": "^4.0.0"
   },
   "devDependencies": {
     "browserify": "^17.0.0",
