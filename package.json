@@ -8,7 +8,7 @@
     "test": "standard && hallmark"
   },
   "dependencies": {
-    "electron": "^21.0.1",
+    "electron": "^24.1.3",
     "level": "^8.0.0",
     "many-level": "^2.0.0",
     "readable-stream": "^4.0.0"
